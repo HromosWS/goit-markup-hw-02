@@ -1,12 +1,40 @@
+:root{
+    --dark-col:#212121;
+    --blue-col:#2196F3;
+    --white-col:#FFFFFF;
+    --grey-col:#757575;
+    --dark-background:#2F303A;
+}
+
 .body  {
     font-family: "Roboto", sans-serif;
 }
-
+.list{
+    list-style: none;
+}
 .link
 {
     text-decoration: none;
 }
+.header-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: inherit;
+}
 
+.header-logo-web {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue-col)
+}
 .header-list-link
 {
 font-family: 'Roboto';
@@ -16,15 +44,16 @@ font-family: 'Roboto';
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 
-    color: #212121;
+    color:var(--dark-col);
+    
 }
 .header-list-link:hover
 {
-color: #2196F3
+color: var(--blue-col);
 }
 .list-active-link
 {
-    color: #2196F3;
+    color:var(--blue-col);
 }
 .header-tel-link
 {
@@ -35,14 +64,14 @@ font-family: 'Roboto';
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color:var(--grey-col);
 }
 .header-tel-link:hover {
-    color: #2196F3
+    color:var(--blue-col);
 }
 
 .list-active-link {
-    color: #2196F3;
+    color:var(--blue-col);
 }
 .header-mailto-link 
 {
@@ -51,73 +80,66 @@ font-family: 'Roboto';
         line-height: calc(16/14);
         letter-spacing: 0.02em;
     
-        color: #2196F3;
+        color:var(--blue-col);
 }
 .header-mailto-link
 {
-    color: #2196F3
+    color:var(--blue-col)
 }
 .list-active-link {
-    color: #2196F3;
+    color:var(--blue-col)
 }
-.logo-link
-{
-    font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        /* identical to box height */
-    
-        letter-spacing: 0.03em;
-    
-        color: #2196F3;
-    
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
-.logo-header
-{
-        font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: calc(31/26);
-            /* identical to box height */
-        
-            letter-spacing: 0.03em;
-        
-            color: black;
-        
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
+
 .main-title
 {
-    font-weight: 900;
-    background-color: #757575;
+width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+
+    background:var(--dark-background);
+}
+.main-words {
+    position: absolute;
+        width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
         font-size: 44px;
-        line-height: calc(60/44);
+        line-height: 60px;
         /* or 136% */
     
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-
+    
+        color:var(--white-col);
 }
 .main-button link:hover
 {
+position: absolute;
+    width: 152px;
+    height: 30px;
+    left: 724px;
+    top: 440px;
+
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: calc(30/16);
-        /* identical to box height, or 188% */
-    
-        display: flex;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.06em;
-    
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color:var(--white-col);
         
 }
 .main-attention
@@ -128,7 +150,7 @@ font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #212121;
+    color:var(--dark-col);
 }
 .main-explenation
 {
@@ -139,7 +161,7 @@ font-weight: 700;
     
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color:var(--grey-col);
 }
 .main-working
 {
@@ -149,7 +171,7 @@ font-weight: 700;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color:var(--dark-col);
 }
 .main-photos-gadgets
 {
@@ -159,7 +181,7 @@ font-weight: 700;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color:var(--dark-col);
 }
 .main-team
 {
@@ -169,7 +191,7 @@ font-weight: 700;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color:var(--dark-col);
 }
 
 .main-teamleaders-name
@@ -182,7 +204,7 @@ font-weight: 500;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color:var(--dark-col);
 }
 .main-teamlreaders-job
 {
@@ -194,19 +216,30 @@ font-weight: 500;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color:var(--grey-col);
 }
 .footer-logo
 {
-    font-weight: 700;
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
-        /* identical to box height */
-    
+        line-height: 1.19;
         letter-spacing: 0.03em;
-    
-        color: #2196F3;
+        color: var(--dark-col)
 }
+        .footer-header{
+font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: var(--blue-col);
+}
+        
+
 .footer-map
 {
     font-weight: 400;
@@ -216,7 +249,7 @@ font-weight: 500;
     
         letter-spacing: 0.03em;
     
-        color: #FFFFFF;
+        color:var(--white-col);
 }
 .footer-tel {
     font-family: 'Roboto';
@@ -230,11 +263,11 @@ font-weight: 500;
 }
 
 .footer-tel:hover {
-    color: #2196F3
+    color:var(--blue-col);
 }
 
 .list-active-link {
-    color: #2196F3;
+    color:var(--blue-col);
 }
 
 .footer-email {
@@ -243,9 +276,9 @@ font-weight: 500;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 
-    color: #2196F3;
+    color:var(--blue-col);
 }
 
 .footer-email {
-    color: #2196F3
+    color:var(--blue-col);
 }
