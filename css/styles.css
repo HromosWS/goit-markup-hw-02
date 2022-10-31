@@ -242,7 +242,7 @@ font-weight: 500;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        color: var(--dark-col)
+        color: var(--white-col)
 }
 .footer-logo text span{
     color: var(--blue-col);
