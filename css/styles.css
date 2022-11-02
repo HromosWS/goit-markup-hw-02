@@ -50,7 +50,7 @@ font-family: 'Roboto';
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 
-    color:var(--dark-col);
+    color:var(--grey-col);
 
 }
 
@@ -62,7 +62,7 @@ color: var(--blue-col);
 {
     color:var(--blue-col);
 }
-.header-tel-link
+.header-tel
 {
 font-family: 'Roboto';
     font-style: normal;
@@ -70,56 +70,38 @@ font-family: 'Roboto';
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-
-    color:var(--grey-col);
     text-decoration: none;
+    color: var(--grey-col)
 }
-.header-tel-link:hover {
+.header-tel:hover {
     color:var(--blue-col);
 }
 
-.list-active-link {
-    color:var(--blue-col);
-}
-.header-mailto-link 
+.header-email 
 {
+font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16/14);
-        letter-spacing: 0.02em;
-    
-        color:var(--blue-col);
-        text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--grey-col)
 }
-.header-mailto-link
+.header-email:hover
 {
     color:var(--blue-col)
 }
-.list-active-link {
-    color:var(--blue-col)
-}
-
 .main-title
 {
-width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
 
     background:var(--dark-background);
 }
 .main-words {
-    position: absolute;
-        width: 696px;
-        height: 120px;
-        left: 452px;
-        top: 280px;
-    
-        font-family: 'Roboto';
-        font-style: normal;
+
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
+        line-height:calc(60/44);
         /* or 136% */
     
         text-align: center;
@@ -139,11 +121,6 @@ width: 1600px;
     background: var(--blue-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    position: absolute;
-    width: 216px;
-        height: 50px;
-        left: 692px;
-        top: 430px;
 }
 .main-hero {
     border: 0;
@@ -158,29 +135,25 @@ width: 1600px;
     word-wrap: normal !important;
 }
 .main-attention
-{
-font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
 
-    color:var(--dark-col);
+.benefits-tiitle{
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color:var(--dark-col);
 }
 .main-explenation
-{
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
-    
-        letter-spacing: 0.03em;
-    
-        color:var(--grey-col);
+{letter-spacing: 0.03em;
+
+    color:var(--grey-col);
+    font-size: 14px;
+    line-height:calc(24/14)
+    /* or 171% */
+
 }
 .main-working
 {
-    font-weight: 700;
         font-size: 36px;
         line-height: 42px;
         text-align: center;
@@ -190,7 +163,6 @@ font-weight: 700;
 }
 .main-photos-gadgets
 {
-    font-weight: 700;
         font-size: 36px;
         line-height: 42px;
         text-align: center;
@@ -211,9 +183,8 @@ font-weight: 700;
 
 .main-teamleaders-name
 {
-font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height:calc(19/16);
     /* identical to box height */
 
     text-align: center;
@@ -248,9 +219,8 @@ font-weight: 500;
     color: var(--blue-col);
 }
      .footer-header{
-font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height:calc(31/26);
     /* identical to box height */
 
     letter-spacing: 0.03em;
@@ -262,9 +232,8 @@ font-weight: 700;
 
 .footer-map
 {
-    font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height:calc(24/14);
         /* or 171% */
     
         letter-spacing: 0.03em;
@@ -274,9 +243,8 @@ font-weight: 700;
 .footer-tel {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height:calc(16/14);
     letter-spacing: 0.02em;
     text-decoration: none;
     color:var(--grey-col)
@@ -286,12 +254,7 @@ font-weight: 700;
     color:var(--blue-col);
 }
 
-.list-active-link {
-    color:var(--blue-col);
-}
-
 .footer-email {
-    font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
@@ -311,14 +274,14 @@ font-weight: 700;
     background:var(--dark-background)
 }
 .main-buttons
-{
-    position: absolute;
-        width: 575px;
-        height: 54px;
-        left: 512px;
-        top: 174px;
-        text-decoration: none;
-        list-style: none;
+{font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height:calc(26/16);
+    /* identical to box height, or 162% */
+    letter-spacing: 0.03em;
+
+    color:var(--dark-col)
 }
 .main-images
 {
