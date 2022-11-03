@@ -9,86 +9,94 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <a href="/" class="header-logo link"><span class="header-logo-web">Web</span>Studio
-        </a>
-        <nav>
-            <ul class="header-list list">
-                <li class="header-list-item"><a class="header-list-link header-link link list-active-link" href="#">Студія</a></li>
-                <li class="header-list-item"><a class="header-list-link header-link link" href="#">Портфоліо</a></li>
-                <li class="header-list-item"><a class="header-list-link header-link link" href="#">Контакти</a></li>
+        <div class="container">
+            <a href="/" class="header-logo link"><span class="header-logo-web">Web</span>Studio
+            </a>
+            <nav class="header-nav">
+                <ul class="header-list list">
+                    <li class="item"><a class="header-link link" href="./index.html">Студія</a></li>
+                    <li class="item"><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="item"><a class="header-link link" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contacts list">
+                <li class="item"><a class="header-email item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="header-tel item" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="header-list list">
-            <li><a class="header-mailto-link list-active-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-tel-link list-active-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main class="main">
-            <section>
-                <h2 class="main-list">Список кнопок</h2>
+            <section class="section">
+                <div class="container">
+                <h2 class="main-hero">Список кнопок</h2>
                 <ul class="main-buttons list">
-                    <li><button type="button">Усі</button></li>
-                    <li><button type="button">Веб-сайти</button></li>
-                    <li><button type="button">Додатки</button></li>
-                    <li><button type="button">Дизайн</button></li>
-                    <li><button type="button">Маркетинг</button></li>
+                    <li class="item"><button type="button">Усі</button></li>
+                    <li class="item"><button type="button">Веб-сайти</button></li>
+                    <li class="item"><button type="button">Додатки</button></li>
+                    <li class="item"><button type="button">Дизайн</button></li>
+                    <li class="item"><button type="button">Маркетинг</button></li>
                 </ul>
+                </div>
             </section>
-            <section>
-                <ul class="main-images">
-                    <li>
-                        <img src="./images/imgcomputer.jpg" alt="website" width="370" height="294">
-                        <h3>Технокряк</h3>
-                        <p>Веб-сайт</p>
+            <section class="section main-group">
+                <div class="container">
+                <ul class="main-images list">
+                    <li class="item">
+                        <img class="img top" src="./images/imgcomputer.jpg" alt="website" width="370" height="294">
+                        <h3 class="text">Технокряк</h3>
+                        <p class="tittle">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="./images/imgbasket.jpg" alt="design" width="370" height="294">
-                        <h3>Постер New Orlean vs Golden Star</h3>
-                        <p>Дизайн</p>
+                    <li class="item">
+                        <img class="img top" src="./images/imgbasket.jpg" alt="design" width="370" height="294">
+                        <h3 class="text">Постер New Orlean vs Golden Star</h3>
+                        <p class="tittle">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="./images/imgfish.jpg" alt="addition" width="370" height="294">
-                        <h3>Ресторан Seafood</h3>
-                        <p>Додаток</p>
+                    <li class="item">
+                        <img class="img top" src="./images/imgfish.jpg" alt="addition" width="370" height="294">
+                        <h3 class="text">Ресторан Seafood</h3>
+                        <p class="tittle">Додаток</p>
                     </li>
-                    <li>
-                        <img src="./images/imgheadphones.jpg" alt="marketing" width="370" height="294">
-                        <h3>Проєкт Prime</h3>
-                        <p>Маркетинг</p>
+                    <li class="item">
+                        <img class="img middle" src="./images/imgheadphones.jpg" alt="marketing" width="370" height="294">
+                        <h3 class="text">Проєкт Prime</h3>
+                        <p class="tittle">Маркетинг</p>
                     </li>
-                    <li>
-                        <img src="./images/imgboxes.jpg" alt="addition" width="370" height="294">
-                        <h3>Проєкт Boxes</h3>
-                        <p>Додаток</p>
+                    <li class="item">
+                        <img class="img middle" src="./images/imgboxes.jpg" alt="addition" width="370" height="294">
+                        <h3 class="text">Проєкт Boxes</h3>
+                        <p class="tittle">Додаток</p>
                     </li>
-                    <li>
-                        <img src="./images/imgmonitor.jpg" alt="website" width="370" height="294">
-                        <h3>Inspiration has no Borders</h3>
-                        <p>Веб-сайт</p>
+                    <li class="item">
+                        <img class="img middle" src="./images/imgmonitor.jpg" alt="website" width="370" height="294">
+                        <h3 class="text">Inspiration has no Borders</h3>
+                        <p class="tittle">Веб-сайт</p>
                     </li>
-                    <li>
-                        <img src="./images/imgmonitor.jpg" alt="design" width="370" height="294">
-                        <h3>Видання Limited Edition</h3>
-                        <p>Дизайн</p>
+                    <li class="item">
+                        <img class="img bottom" src="./images/imgmonitor.jpg" alt="design" width="370" height="294">
+                        <h3 class="text">Видання Limited Edition</h3>
+                        <p class="tittle">Дизайн</p>
                     </li>
-                    <li>
-                        <img src="./images/imglabel.jpg" alt="marketing" width="370" height="294">
-                        <h3>Проєкт LAB</h3>
-                        <p>Маркетинг</p>
+                    <li class="item">
+                        <img class="img bottom" src="./images/imglabel.jpg" alt="marketing" width="370" height="294">
+                        <h3 class="text">Проєкт LAB</h3>
+                        <p class="tittle">Маркетинг</p>
                     </li>
-                    <li>
-                        <img src="./images/imgbussines.jpg" alt="addition" width="370" height="294">
-                        <h3>Growing Business</h3>
-                        <p>Додаток</p>
+                    <li class="item">
+                        <img class="img bottom" src="./images/imgbussines.jpg" alt="addition" width="370" height="294">
+                        <h3 class="text">Growing Business</h3>
+                        <p class="tittle">Додаток</p>
                     </li>
                 </ul>
+                </div>
             </section>
     </main>
     <footer class="footer">
+        <div class="container">
         <a href="/" class="footer-logo">
             <span class="footer-header">Web</span><span>Studio</span>
         </a>
@@ -101,7 +109,7 @@
                 <li><a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
-<link rel="stylesheet" href="">
