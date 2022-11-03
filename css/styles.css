@@ -8,6 +8,7 @@
     --white-text-color:#FFFFFF;
     --white-background:#FFFFFF;
     --col-white-border:#ECECEC;
+    --light-grey-backgrond:#F5F4FA;
 }
 
 .body  {
@@ -178,24 +179,27 @@ text-align: center;
 .main-text .item + .item{
     margin-left: 30px;
 }
-.benefits-tiitle{
-line-height: 16px;
+.benefits-title{
+font-size: 14px;
+line-height:calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 
 color:var(--dark-col);
 }
-.main-explenation
-{letter-spacing: 0.03em;
-    color:var(--grey-col);
+.main-explenation{
+
     font-size: 14px;
-    margin-left: 30px;
-    line-height:calc(24/14)
+    line-height:calc(24/14);
     /* or 171% */
-    
+
+    letter-spacing: 0.03em;
+
+    color:var(--grey-col)
 }
 .main-working
 {
+        padding-bottom: 50px;
         font-size: 36px;
         line-height:calc(42/36);
         text-align: center;
@@ -205,6 +209,7 @@ color:var(--dark-col);
 }
 .main-photos {
     display: flex;
+    justify-content: center;
 }
 
 .main-photos .item + .item {
@@ -218,25 +223,27 @@ color:var(--dark-col);
 }
 .main-photos
 {
-        font-size: 36px;
-        line-height:calc(42/36);
-        text-align: center;
-        letter-spacing: 0.03em;
-    
-        color:var(--dark-col);
+    font-size: 36px;
+    line-height:calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--dark-col);
+}
+.ourteam{
+background-color: var(--light-grey-backgrond);
 }
 .main-team
 {
-    
-        font-size: 36px;
-        line-height:calc(42/36);
-        text-align: center;
-        letter-spacing: 0.03em;
-    
-        color:var(--dark-col);
+    padding-bottom: 50px;
+    font-size: 36px;
+    line-height:calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--dark-col);
 }
 .main-teamleaders{
     display: flex;
+    justify-content: center;
 }
 .main-teamleaders .item + .item{
     display: block;
@@ -247,6 +254,9 @@ color:var(--dark-col);
 }
 .main-teamleaders-name{
     margin-bottom: 10px;
+}
+.main-teamleaders-hero{
+    background-color: var(--white-background);
 }
 .main-teamlreaders-job{
     margin-bottom: 30px;
@@ -348,20 +358,36 @@ color:var(--dark-col);
     background:var(--dark-background)
 }
 
-.main-buttons
-{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-size: 16px;
-    line-height:calc(26/16);
-    /* identical to box height, or 162% */
-    letter-spacing: 0.03em;
-
-    color:var(--dark-col)
-}
 .main-buttons{
     display:flex;
    justify-content: center;
+  
+}
+.attachment {
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color:var(--dark-col);
+}
+.attachment:hover{
+    color: var(--white-col);
+}
+.list-active-link
+{
+    color:var(--blue-col);
+}
+.tack{
+    background: var(--light-grey-backgrond);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.tack:hover{
+background-color: var(--blue-background);
 }
 .main-buttons .item + .item{
     margin-left: 30px;
@@ -382,7 +408,7 @@ padding-left: 0px;
 margin-top: 20px;
 margin-left: 24px;
 }
-.tittle{
+.title{
 margin-top: 4px;
 margin-left: 24px;
 }
