@@ -363,6 +363,10 @@ background-color: var(--light-grey-backgrond);
    justify-content: center;
   
 }
+.all-buttons{
+    padding-bottom: 50px;
+    padding-top: 94px;
+}
 .attachment {
     font-size: 16px;
     line-height: 26px;
@@ -376,10 +380,6 @@ background-color: var(--light-grey-backgrond);
 .attachment:hover{
     color: var(--white-col);
 }
-.list-active-link
-{
-    color:var(--blue-col);
-}
 .tack{
     background: var(--light-grey-backgrond);
     border-radius: 4px;
@@ -388,6 +388,8 @@ background-color: var(--light-grey-backgrond);
 }
 .tack:hover{
 background-color: var(--blue-background);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .main-buttons .item + .item{
     margin-left: 30px;
@@ -403,6 +405,24 @@ gap: 30px;
 }
 .main-images .item + .item{
 padding-left: 0px;
+}
+.text{
+    font-size: 18px;
+    line-height:calc(36/18);
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 0.06em;
+    
+    color:var(--dark-col)
+}
+.title{
+    font-size: 16px;
+    line-height:calc(30/16);
+    /* identical to box height, or 188% */
+    
+    letter-spacing: 0.03em;
+    
+    color:var(--grey-col)
 }
 .text{
 margin-top: 20px;
