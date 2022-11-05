@@ -50,7 +50,8 @@ ul{
 }
 .header{
     background-color: var(--white-background);
-    border: 1px solid var(--col-white-border)
+    border: 1px solid var(--col-white-border);
+    border-top: var(--white-background);
 }
 .header-logo {
     font-family: 'Raleway';
