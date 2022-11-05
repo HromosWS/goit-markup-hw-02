@@ -13,6 +13,7 @@
 
 .body  {
     font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 .container{
     width: 1200px;
@@ -185,7 +186,7 @@ font-size: 14px;
 line-height:calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
+padding-bottom: 0px;
 color:var(--dark-col);
 }
 .main-explenation{
