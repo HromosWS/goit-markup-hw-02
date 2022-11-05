@@ -11,12 +11,11 @@
     --light-grey-backgrond:#F5F4FA;
 }
 
-.body  {
+body  {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
 }
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     /* outline: 2px solid; */
@@ -52,7 +51,7 @@ ul{
 .header{
     background-color: var(--white-background);
     border: 1px solid var(--col-white-border);
-    border-top: var(--white-background);
+    border: 1px var(--white-background);
 }
 .header-logo {
     font-family: 'Raleway';
@@ -105,7 +104,7 @@ color: var(--blue-col);
 .header-contacts .item + .item{
     margin-left: 50px;
 }
-.header-tel
+.header-contact-link
 {   display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -115,23 +114,8 @@ color: var(--blue-col);
     text-decoration: none;
     color: var(--grey-col)
 }
-.header-tel:hover {
+.header-contact-link:hover {
     color:var(--blue-col);
-}
-
-.header-email 
-{   display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--grey-col)
-}
-.header-email:hover
-{
-    color:var(--blue-col)
 }
 .main-title
 {
@@ -143,12 +127,13 @@ text-align: center;
         font-size: 44px;
         line-height:calc(60/44);
         /* or 136% */
-        padding-bottom: 40px;
+        /* padding-bottom: 40px; */
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        padding-top: 100px;
-
+        /* padding-top: 100px; */
+        max-width: 700px;
+        margin: 0 auto 30px;
         color:var(--white-col);
 }
 .main-button {
@@ -161,6 +146,8 @@ text-align: center;
     background: var(--blue-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
 }
 .main-hero {
     border: 0;
@@ -181,12 +168,16 @@ text-align: center;
 .main-text .item + .item{
     margin-left: 30px;
 }
+.main-benefits{
+    padding-bottom: 0px;
+}
 .benefits-title{
 font-size: 14px;
+padding-top: 40px;
 line-height:calc(16/14);
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-bottom: 0px;
+margin-bottom: 10px;
 color:var(--dark-col);
 }
 .main-explenation{
@@ -251,18 +242,19 @@ background-color: var(--light-grey-backgrond);
     display: block;
     margin-left: 30px;
 }
-.selfie{
-    padding-bottom: 30px;
+.workers{
+    padding: 30px 0;
 }
+/* .selfie{
+    padding:30px 0;
+} */
 .main-teamleaders-name{
     margin-bottom: 10px;
 }
 .main-teamleaders-hero{
     background-color: var(--white-background);
 }
-.main-teamlreaders-job{
-    margin-bottom: 30px;
-}
+
 .main-teamleaders-name
 {
     font-size: 16px;
@@ -387,14 +379,18 @@ background-color: var(--light-grey-backgrond);
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    padding: 6px 22px;
 }
 .tack:hover{
 background-color: var(--blue-background);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
+.main-buttons{
+    padding-bottom: 50px;
+}
 .main-buttons .item + .item{
-    margin-left: 30px;
+    margin-left: 8px;
 }
 .main-group{
     padding-top: 34px;
@@ -433,4 +429,7 @@ margin-left: 24px;
 .title{
 margin-top: 4px;
 margin-left: 24px;
+}
+.list{
+padding: 20px 0;
 }
