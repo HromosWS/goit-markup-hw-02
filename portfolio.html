@@ -1,113 +1,178 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-            <a href="/" class="header-logo link"><span class="header-logo-web">Web</span>Studio
+            <a href="/" class="header-logo link"><span class="header-logo-web">WEB</span>STUDIO
             </a>
             <nav class="header-nav">
                 <ul class="header-list list">
-                    <li class="item"><a class="header-link link" href="./index.html">Студія</a></li>
-                    <li class="item"><a class="header-link link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="item"><a class="header-link link" href="#">Контакти</a></li>
+                    <li class="item"><a class="header-link link" href="./index.html">Studio</a></li>
+                    <li class="item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="item"><a class="header-link link" href="#">Contacts</a></li>
                 </ul>
             </nav>
             <ul class="header-contacts list">
-                <li class="item"><a class="header-email item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="item"><a class="header-tel item" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="item"><a class="header-mail link item"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="item"><a class="header-tel link item" href="tel:+11(000)1111111">+11 (000) 111-11-11</a></li>
             </ul>
         </div>
     </header>
-    <main class="main">
-            <section class="section all-buttons">
-                <div class="container">
-                <h2 class="main-hero">Список кнопок</h2>
-                <ul class="main-buttons list">
-                    <li class="item attachment"><button type="button" class="tack">Усі</button></li>
-                    <li class="item attachment"><button type="button" class="tack">Веб-сайти</button></li>
-                    <li class="item attachment"><button type="button" class="tack">Додатки</button></li>
-                    <li class="item attachment"><button type="button" class="tack">Дизайн</button></li>
-                    <li class="item attachment"><button type="button" class="tack">Маркетинг</button></li>
+    <main>
+        <section class="portfolio section">
+            <div class="container">
+                <h1 class="hero-hidden-text">Пропозіції</h1>
+                <ul class="portfolio-filters list">
+                    <li class="item"><button class="main-button-filter" type="button">All</button></li>
+                    <li class="item"><button class="main-button-filter" type="button">Web Site</button></li>
+                    <li class="item"><button class="main-button-filter" type="button">App</button></li>
+                    <li class="item"><button class="main-button-filter" type="button">Design</button></li>
+                    <li class="item"><button class="main-button-filter" type="button">Marketing</button></li>
                 </ul>
-            <!-- </section> -->
-            <!-- <section class="section main-group">  -->
                 <ul class="main-images list">
-                    <li class="item">
-                        <img class="img top" src="./images/imgcomputer.jpg" alt="website" width="370" height="294">
-                        <div class="list"><h3 class="text">Технокряк</h3>
-                        <p class="title">Веб-сайт</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/bank.jpg" alt="website" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Banking App Interface Concept</h3>
+                                <p class="offer">App</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img top" src="./images/imgbasket.jpg" alt="design" width="370" height="294">
-                        <div class="list"><h3 class="text">Постер New Orlean vs Golden Star</h3>
-                        <p class="title">Дизайн</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/pay.jpg" alt="design" width="370" height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Cashless Payment</h3>
+                                <p class="offer">Marketing</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img top" src="./images/imgfish.jpg" alt="addition" width="370" height="294">
-                        <div class="list"><h3 class="text">Ресторан Seafood</h3>
-                        <p class="title">Додаток</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/app.jpg" alt="addition" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Meditaion App</h3>
+                                <p class="offer">App</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img middle" src="./images/imgheadphones.jpg" alt="marketing" width="370" height="294">
-                        <div class="list"><h3 class="text">Проєкт Prime</h3>
-                        <p class="title">Маркетинг</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/taxi.jpg" alt="marketing" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Taxi Service</h3>
+                                <p class="offer">Marketing</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img middle" src="./images/imgboxes.jpg" alt="addition" width="370" height="294">
-                        <div class="list"><h3 class="text">Проєкт Boxes</h3>
-                        <p class="title">Додаток</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/screen.jpg" alt="addition" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Screen Illustrations</h3>
+                                <p class="offer">Design</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img middle" src="./images/imgmonitor.jpg" alt="website" width="370" height="294">
-                        <div class="list"><h3 class="text">Inspiration has no Borders</h3>
-                        <p class="title">Веб-сайт</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/courses.jpg" alt="website" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Online Courses</h3>
+                                <p class="offer">Marketing</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img bottom" src="./images/imgmonitor.jpg" alt="design" width="370" height="294">
-                        <div class="list"><h3 class="text">Видання Limited Edition</h3>
-                        <p class="title">Дизайн</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/inst.jpg" alt="design" width="370" height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Instagram Stories Concept</h3>
+                                <p class="offer">Design</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img bottom" src="./images/imglabel.jpg" alt="marketing" width="370" height="294">
-                        <div class="list"><h3 class="text">Проєкт LAB</h3>
-                        <p class="title">Маркетинг</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/food.jpg" alt="marketing" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Organic Food</h3>
+                                <p class="offer">Web Site</p>
+                            </div>
+                        </a>
                     </li>
-                    <li class="item">
-                        <img class="img bottom" src="./images/imgbussines.jpg" alt="addition" width="370" height="294">
-                        <div class="list"><h3 class="text">Growing Business</h3>
-                        <p class="title">Додаток</p></div>
+                    <li class="offer-list item">
+                        <a href="#" class="offer-link">
+                            <img class="offer-photo item" src="./images/coffe.jpg" alt="addition" width="370"
+                                height="294">
+                            <div class="offer-text">
+                                <h3 class="offer-name">Fresh Coffee</h3>
+                                <p class="offer">Web Site</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-                </div>
-            </section>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
-        <a href="/" class="footer-logo">
-            <span class="footer-header">Web</span><span>Studio</span>
-        </a>
-        <address class="footer-address">
-            <ul class="footer-feedback list">
-                <li><a class="footer-map" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target=" blank"
-                        rel="noopener noreferrer">м. Київ, пр-т
-                        Лесі Українки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" class="footer-email">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="footer-tel">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+            <div class="footer-text">
+                <a href="/" class="footer-logo link"><span class="footer-logo-web">WEB</span>STUDIO</a>
+                <p class="footer-p">Increase the flow of customers and sales for your business with digital marketing &
+                    growth
+                    solutions.</p>
+            </div>
+            <div class="footer-soc">
+                <p class="footer-soc-text">Social media</p>
+                <ul class="footer-soc-list list">
+                    <li class="footer-soc-item"><a href="#" class="footer-soc-link instagram">
+                            <svg class="footer-soc-icon">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-soc-item"><a href="#" class="footer-soc-link twitter"><svg
+                                class="footer-soc-icon">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-soc-item"><a href="#" class="footer-soc-link facebook"><svg
+                                class="footer-soc-icon">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="footer-soc-item"><a href="#" class="footer-soc-link linkedin"><svg
+                                class="footer-soc-icon">
+                                <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
